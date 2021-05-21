@@ -6,7 +6,7 @@ Sonar-drone钉钉推送插件
 
 ```yaml
 #docker hub
-docker pull yujian1996/sonar-ding:1.0
+docker pull yujian1996/sonar-ding:1.1
 ```
 
 
