@@ -46,17 +46,12 @@ if __name__ == '__main__':
                 vulnerabilitiesCount = metric['value']
             if metric['metric'] == 'code_smells':
                 codeSmellsCount = metric['value']
-            if metric['metric'] == 'coverage':
-                coverage = metric['value']
-            if metric['metric'] == 'duplicated_lines_density':
-                duplicatedLinesDensityCount = metric['value']
             if metric['metric'] == 'alert_status':
                 alertStatus = metric['value']
-    str = os.getenv('projectKeys') + '项目扫描结果:BUG数：{}个，漏洞数：{}个，异味数：{}个，覆盖率：{}%，重复率：{}%'.format(bugCount,
+    str = os.getenv('projectKeys') + '项目扫描结果:BUG数：{}个，漏洞数：{}个，异味数：{}个'.format(bugCount,
                                                                                               vulnerabilitiesCount,
-                                                                                              codeSmellsCount,
-                                                                                              coverage,
-                                                                                              duplicatedLinesDensityCount)
+                                                                                              codeSmellsCount
+                                                                                            )
     pic = successPic
     if alertStatus == 'ERROR':
         pic = errorPic
