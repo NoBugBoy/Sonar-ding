@@ -47,7 +47,7 @@ if __name__ == '__main__':
             if metric['metric'] == 'code_smells':
                 codeSmellsCount = metric['value']
             if metric['metric'] == 'coverage':
-                coverage = metric['value'] + '%'
+                coverage = metric['value']
             if metric['metric'] == 'duplicated_lines_density':
                 duplicatedLinesDensityCount = metric['value']
             if metric['metric'] == 'alert_status':
